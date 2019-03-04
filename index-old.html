@@ -1,0 +1,126 @@
+<title> Game! </title>
+
+<script>
+
+
+/*    begin with a function called computerPlay that will randomly return either 
+      'Rock', 'Paper' or 'Scissors'.
+      We'll use this function in the game to make the computer's play.*/
+
+
+  
+   
+  function computerPlay() {
+    var choicesArray = ['paper','rock', 'scissors'];
+
+   var randy = choicesArray[Math.floor(Math.random() * choicesArray.length)];
+   return randy;
+ 
+   }
+
+  /* Write a function that plays a single round of Rock Paper Scissors.
+     The function should take two parameters - the playerSelection and computerSelection -
+     and then return a string that declares the winner of the round like so:
+     "You Lose! Paper beats Rock" */
+
+     var computerChoice ;
+    
+     var playerChoicePre ;
+     var playerChoice ;
+     var computerScore=0;
+     var playerScore=0;
+     
+/*function gameOn(computerChoice,playerChoice) {
+    for (var i=0; i<5 ; i++ ) {
+        console.log("round  " + (i+1)+"/5" );
+        function computerPlay() {
+    var choicesArray = ['paper','rock', 'scissors'];
+
+   var randy = choicesArray[Math.floor(Math.random() * choicesArray.length)];
+   return randy;
+ 
+   };*/
+         computerChoice = computerPlay();
+        playerChoicePre = prompt("Round " + (i+1)+" /5" + " \nEnter your choice : \nRock\nPaper\nScissors " );
+        playerChoice = playerChoicePre.toLowerCase();
+       
+if (computerChoice== "paper" && playerChoice == "rock"){
+alert("Computer Choice  is : "+ computerChoice);
+    alert ( "You lose! Paper beats Rock!");
+    computerScore++;
+    console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+
+else {
+
+if (computerChoice== "paper" && playerChoice == "scissors"){
+    alert("Computer Choice  is : "+ computerChoice);
+    alert ( "You Win! Scissors beat Paper!");
+    playerScore++;
+    console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+    }
+
+else {
+    if (computerChoice== "paper" && playerChoice == "paper"){
+        alert("Computer Choice  is : "+ computerChoice);
+    alert("Oh! It's a draw! Try again! ");
+    console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+
+else {
+    if (computerChoice== "rock" && playerChoice == "scissors"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "You Lose! Rock beats Scissors! ");
+        computerScore++;
+        console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+else {
+    if (computerChoice== "rock" && playerChoice == "paper"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "You Win! Paper beats Rock!");
+        playerScore++;
+        console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+
+else {
+    if (computerChoice== "rock" && playerChoice == "rock"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "Oh! It's a draw! Try again! ")
+        console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+else {
+    if (computerChoice== "scissors" && playerChoice == "rock"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "You Win! Rock beats Scissors!");
+        playerScore++;
+        console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+else {
+    if (computerChoice== "scissors" && playerChoice == "paper"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "You Lose! Scissors beat Paper!");
+        computerScore++;
+        console.log("computer : " + computerScore );
+    console.log("your score : " + playerScore);
+}
+else {
+    if (computerChoice== "scissors" && playerChoice == "scissors"){
+        alert("Computer Choice  is : "+ computerChoice);
+        alert ( "Oh! It's a draw! Try again! ");
+        
+        
+}
+
+
+}}}}}}}}
+console.log(gameOn(computerChoice,playerChoice));
+
+
+</script>
