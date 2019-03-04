@@ -10,13 +10,13 @@
 
   
    
-  /* function computerPlay() {
+  function computerPlay() {
     var choicesArray = ['paper','rock', 'scissors'];
 
    var randy = choicesArray[Math.floor(Math.random() * choicesArray.length)];
    return randy;
  
-   }*/
+   }
 
   /* Write a function that plays a single round of Rock Paper Scissors.
      The function should take two parameters - the playerSelection and computerSelection -
@@ -30,7 +30,7 @@
      var computerScore=0;
      var playerScore=0;
      
-function gameOn(computerChoice,playerChoice) {
+/*function gameOn(computerChoice,playerChoice) {
     for (var i=0; i<5 ; i++ ) {
         console.log("round  " + (i+1)+"/5" );
         function computerPlay() {
@@ -39,7 +39,7 @@ function gameOn(computerChoice,playerChoice) {
    var randy = choicesArray[Math.floor(Math.random() * choicesArray.length)];
    return randy;
  
-   };
+   };*/
          computerChoice = computerPlay();
         playerChoicePre = prompt("Round " + (i+1)+" /5" + " \nEnter your choice : \nRock\nPaper\nScissors " );
         playerChoice = playerChoicePre.toLowerCase();
@@ -119,7 +119,7 @@ else {
 }
 
 
-}}}}}}}}}}
+}}}}}}}}
 console.log(gameOn(computerChoice,playerChoice));
 
 

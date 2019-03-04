@@ -1,0 +1,16 @@
+button{
+    position: relative;
+    display:inline-block;
+    margin: 10px;
+    border:solid 1px navy;
+    width: 80px;
+}
+#div {
+    border: solid;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+}
+html {
+    background-image: url(images/background.jpg)
+}
